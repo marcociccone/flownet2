@@ -71,7 +71,7 @@ for blob_idx in range(num_blobs):
 
 #
 # There is some non-deterministic nan-bug in caffe
-# it seems to be a race-condition 
+# it seems to be a race-condition
 #
 print('Network forward pass using %s.' % args.caffemodel)
 i = 1
@@ -121,7 +121,9 @@ def writeFlow(name, flow):
     flow = flow.astype(np.float32)
     flow.tofile(f)
     f.flush()
-    f.close() 
+    f.close()
 
 writeFlow(args.out, blob)
+import ipdb; ipdb.set_trace()
+readFlow(args.out)
 

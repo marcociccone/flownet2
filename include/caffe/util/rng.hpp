@@ -8,6 +8,7 @@
 #include "boost/random/uniform_int.hpp"
 
 #include "caffe/common.hpp"
+#include "caffe/proto/caffe.pb.h"
 
 namespace caffe {
 
